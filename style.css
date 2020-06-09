@@ -2,10 +2,11 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* max-width: 100%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5F5FE;
+    padding-bottom: 10px;
 } 
 main .image{
     background-color: #21273D;
@@ -20,11 +21,15 @@ main .image img{
 .contact-us{
     margin: 10px auto;
     max-width: 80%;
+    padding-top: 5px;
     text-align: center;
 }
 .contact-us #our-form{
     font-weight: 400;
     font-size: 20px;
+}
+.contact-us h1{
+    font-weight: 600;
 }
 .contact-us h1, .contact-us .email-address a{
     color: #D19F4E;
@@ -36,7 +41,7 @@ main .image img{
 } 
 form{
     text-align: center;
-    margin: 0 auto;
+    margin: 35px auto;
 }
 form .fill{
     margin: 20px 0;
@@ -44,21 +49,22 @@ form .fill{
 }
 form label{
     font-weight: 500;
+    font-size: 14px;
     display: block;
     margin-bottom: 5px;
 }
 form input{
-    height: 35px;
+    height: 45px;
 }
 form input, form textarea{
+    font-size: 12px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #f7f7f9;
 }
-form input:focus, 
-form textarea:focus{
+form input:focus, form textarea:focus{
     outline-color: #D19F4E;
     
 }
@@ -71,15 +77,15 @@ form .button{
 }
 form .btn{
     border: 1px solid #D19F4E;
-    margin: 10px 0;
     font-weight: 600;
     cursor: pointer;
     letter-spacing: 1px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     background-color: #D19F4E;
 }
 form .btn:hover{
     background-color: #ad7b2a;
+    color: #fff;
 }
 
 @media(min-width: 768px){
@@ -101,6 +107,5 @@ form .btn:hover{
     }
     form{
         max-width: 400px;
-        margin: auto;
     }
 }
