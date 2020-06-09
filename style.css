@@ -1,0 +1,106 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 100%; */
+}
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+main .image{
+    background-color: #21273D;
+    text-align: center;
+    
+}
+main .image img{
+    width: 55%;
+    height: auto;
+}
+
+.contact-us{
+    margin: 10px auto;
+    max-width: 80%;
+    text-align: center;
+}
+.contact-us #our-form{
+    font-weight: 400;
+    font-size: 20px;
+}
+.contact-us h1, .contact-us .email-address a{
+    color: #D19F4E;
+    font-style: 25px;
+}
+
+.contact-us .email-address a{
+    text-decoration: none;
+} 
+form{
+    text-align: center;
+    margin: 0 auto;
+}
+form .fill{
+    margin: 20px 0;
+    text-align: left;
+}
+form label{
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+form input{
+    height: 35px;
+}
+form input, form textarea{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    background-color: #f7f7f9;
+}
+form input:focus, 
+form textarea:focus{
+    outline-color: #D19F4E;
+    
+}
+form textarea{
+    height: 100px;
+    resize: vertical;
+}
+form .button{
+    text-align: right;
+}
+form .btn{
+    border: 1px solid #D19F4E;
+    margin: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    background-color: #D19F4E;
+}
+form .btn:hover{
+    background-color: #ad7b2a;
+}
+
+@media(min-width: 768px){
+    
+    .contact-us h1, .contact-us .email-address a{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    main .image img{
+        width: 300px;
+        height: auto;
+    }
+    .contact-us{
+        max-height: 60%;
+    }
+    form input, form textarea{
+        max-width: 100%;
+        
+    }
+    form{
+        max-width: 400px;
+        margin: auto;
+    }
+}
